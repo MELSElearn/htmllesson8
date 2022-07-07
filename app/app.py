@@ -15,7 +15,7 @@ def hello_world():
         myage = request.form['age']
         mygender = request.form['gender']
         if str(myage) =='' or str(mygender) =='':
-            return render_template('index.html', href2='Please insert your age and gender.')
+            return render_template('index.html', href2='static/none.png')
         else:
             model = load('app/bread-recommender.joblib')
             np_arr = np.array([myage, mygender])
