@@ -10,7 +10,7 @@ app = Flask(__name__)
 def hello_world():
     request_type_str = request.method
     if request_type_str == 'GET':
-        return render_template('index.html', href2='')
+        return render_template('index.html', href2='none.png')
     else:
         myage = request.form['age']
         mygender = request.form['gender']
