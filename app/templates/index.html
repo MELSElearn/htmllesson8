@@ -1,13 +1,28 @@
-<center>
-  <form method="POST">
-     
-      <label>Insert your age (1-99): </label>
-      <input type="number" name="age" min="1" max="99">
-      <br />
-      <label>Insert your gender (0 for male, 1 for female): </label>
-      <input type="number" name="gender" min="0" max="1">
-      <input type="submit">
-      <br />
-      <label>{{ href2 }} </label>
-  </form>
-</center>
+<html>
+
+<head>
+  <title>Lesson 8</title>
+  <style>
+      div.wrap {
+          text-align: center;
+      }    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <form method="POST">
+       
+        <label>Insert your age (1-99): </label>
+        <input type="number" name="age" min="1" max="99">
+        <br />
+        <label>Insert your gender (0 for male, 1 for female): </label>
+        <input type="number" name="gender" min="0" max="1">
+        <input type="submit">
+        <br />
+        <img src="{{ href2 }}"  width="200">>
+    </form>
+  </div>
+
+</body>
+</html>
+
