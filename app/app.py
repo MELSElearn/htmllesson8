@@ -23,17 +23,17 @@ def hello_world():
             predictions = model.predict([np_arr])  
             predictions_to_str = str(predictions)
             
-            if "donut" in predictions_to_str:
+            if 'donut' in predictions_to_str:
                 mybread = 'static/donut.png'
-            elif "croissant" in predictions_to_str:
+            elif 'croissant' in predictions_to_str:
                 mybread = 'static/croissant.png'
-            elif "whole grain" in predictions_to_str:
+            elif 'whole grain' in predictions_to_str:
                 mybread = 'static/wholegrain.png'
-            elif "wheat bread" in predictions_to_str:
+            elif 'wheat bread' in predictions_to_str:
                 mybread = 'static/wheatbread.png'
-            elif "swiss roll" in predictions_to_str:
+            elif 'swiss roll' in predictions_to_str:
                 mybread = 'static/swissroll.png'
-            elif "sandwich" in predictions_to_str:
+            elif 'sandwich' in predictions_to_str:
                 mybread = 'static/sandwich.png'
             else:
                 mybread = 'static/none.png' 
