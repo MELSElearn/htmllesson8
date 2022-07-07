@@ -38,6 +38,6 @@ def hello_world():
             else:
                 mybread = 'static/none.png' 
                 
-            return render_template('index.html', href2=str(mybread), href2='The suitable bread for you (age:'+str(myage)+' ,gender:'+str(mygender)+') is:'+predictions_to_str)
+            return render_template('index.html', href2=str(mybread), href3='The suitable bread for you (age:'+str(myage)+' ,gender:'+str(mygender)+') is:'+predictions_to_str)
         
 
